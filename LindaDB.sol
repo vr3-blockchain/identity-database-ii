@@ -2,7 +2,7 @@ contract LindaDB {
 
   struct Identity {
     uint entityData;
-    bytes8 sex;
+    bytes32 sex;
     bytes32 firstName;
     bytes32 lastName;
     bytes32 nationality;
@@ -37,7 +37,7 @@ contract LindaDB {
 
   function newIdentityL1(
       address entityAddress,
-      bytes8 sex,
+      bytes32 sex,
       bytes32 firstName,
       bytes32 lastName,
       bytes32 nationality, 
